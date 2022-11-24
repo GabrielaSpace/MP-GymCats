@@ -1,0 +1,119 @@
+/* <main id="content">
+<section class="imagenes">
+    <article class="photo">
+        <img src= 
+        
+<section class="videos">
+            <article class="video">
+                <video src="#" autop
+                
+<section class="musica">
+            <article class="audio">
+                <audio src="#" autoplay controls poster="#" preload="auto">
+            </article>*/
+
+#menu{
+    /* display: grid;
+    grid-template-columns: 50% 50% ; */
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-image: url(https://images.unsplash.com/photo-1620071436087-1386572f4014?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+#menu > ul > li{ 
+    display: inline-block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: beige;
+    justify-content: center;
+    list-style: none;
+    background-color: transparent;
+    line-height: 10px;
+    padding: 10px;
+    margin: 10px;
+    }
+
+ul > li > a{
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: lightgray;
+    text-decoration: none;
+    text-align: center;
+}
+ul > li > a:hover{
+    background: transparent;
+    color: white;
+
+
+
+}
+#content {
+    box-shadow: 10px 10px 10px black;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    width: 100%;
+    height: auto;   
+    display: grid;
+    overflow: hidden;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: arial;
+    
+    
+
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:10px;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.photo img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+/* .imagenes article{
+    width:250px;
+    height: 180px;
+    padding: 10px;
+    margin: 10px;
+    grid-gap:10px;
+    
+
+} */
+
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin: 10px;
+    grid-gap:10px;
+    text-align: center;
+}
+
+.videos video{
+    display: block;
+    width:100%;
+    height: auto;
+}
+.musica{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+}
+.musica audio{
+    padding: 10px;
+    margin: 10px;
+    grid-gap:10px;
+   
+}
